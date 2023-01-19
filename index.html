@@ -23,6 +23,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -32,27 +36,35 @@
     <div class="wrapper">
       <section class="info">
         <h1 class="info__title">Contact information</h1>
-        <div class="info__company">
+        <div class="info__group info__company">
           <div class="company-icon">
-            <img src="" alt="toys company icon" />
+            <span class="lnr lnr-rocket"></span>
           </div>
           <p class="company-name">Toys for girls and boys</p>
         </div>
-        <div class="info__phone">
+        <div class="info__group info__phone">
           <div class="phone-icon">
-            <img src="" alt="phone, mobile phone icon" />
+            <span class="lnr lnr-phone-handset"></span>
           </div>
           <p class="phone-number">327-483-999</p>
         </div>
-        <div class="info__google-maps">
+        <div class="info__group info__google-maps">
+          <div class="maps-icon">
+            <span class="lnr lnr-map-marker"></span>
+          </div>
           <div class="company-location">place for google maps window</div>
         </div>
       </section>
       <section class="form">
         <form action="" class="form__body">
-          <input type="text" class="form__name" placeholder="Your name" />
-          <input type="email" class="form__email" placeholder="Your email" />
-          <input type="text" class="form__message" placeholder="Your message" />
+          <input type="text" class="form__name" placeholder="Name" />
+          <input type="email" class="form__email" placeholder="Email Address" />
+          <textarea
+            class="form_message"
+            cols="10"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
           <button type="submit" class="form__submit">Send message</button>
           <p class="form__terms-services">
             By clicking the button you are agreeing to our

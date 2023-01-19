@@ -1,0 +1,10 @@
+.wrapper {
+  @include flexBox(column, center, auto);
+  min-height: 100vh;
+  background-color: $redColor;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}

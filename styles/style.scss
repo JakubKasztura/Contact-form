@@ -1,5 +1,12 @@
 // import styles for each section
 @import "variables";
+@import "mixins";
+@import "wrapper";
+@import "info";
+@import "form";
 * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   font-family: $fontFamily;
 }

@@ -10,9 +10,12 @@
 
 // ### Primary
 
-// - Red: hsl(0, 100%, 74%)
-// - Green: hsl(154, 59%, 51%)
-
+$redColor: hsl(0, 100%, 74%);
+$greenColor: hsl(154, 59%, 51%);
+$greenBoxShadow: hsla(154, 59%, 51%, 0.4);
+$grayBoxShadow: hsla(0, 0%, 39%, 0.4);
+$grayBorder: hsla(0, 0%, 39%, 0.15);
+$grayFocusInputs: hsla(0, 0%, 39%, 0.6);
 // ### Accent
 
 // - Blue: hsl(248, 32%, 49%)
@@ -21,8 +24,6 @@
 
 // - Dark Blue: hsl(249, 10%, 26%)
 // - Grayish Blue: hsl(246, 25%, 77%)
-
-// ## Typography
 
 //Font size
 

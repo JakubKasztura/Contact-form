@@ -1,0 +1,15 @@
+.info {
+  //   background-color: yellowgreen;
+  color: white;
+  margin-bottom: 50px;
+  &__title {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  &__group {
+    @include flexBox(row, flex-start, center);
+    gap: 14px;
+    font-size: 1.1em;
+  }
+}
