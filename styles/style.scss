@@ -21,3 +21,9 @@ body {
   background-size: contain;
   padding: 20px;
 }
+@media (min-width: $large) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}

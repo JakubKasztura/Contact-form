@@ -48,7 +48,14 @@
 @media (min-width: $small) {
   .form {
     &__body {
-      width: 70%;
+      width: 80%;
+    }
+  }
+}
+@media (min-width: $large) {
+  .form {
+    &__body {
+      height: 100%;
     }
   }
 }

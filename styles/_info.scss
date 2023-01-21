@@ -41,3 +41,11 @@
     }
   }
 }
+@media (min-width: $large) {
+  .info {
+    align-self: auto;
+    &__group {
+      font-size: 1.3em;
+    }
+  }
+}

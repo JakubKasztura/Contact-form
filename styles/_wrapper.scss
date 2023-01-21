@@ -2,8 +2,8 @@
   @include flexBox(column, center, flex-start);
   min-height: 100vh;
 }
-@media (min-width: $small) {
+@media (min-width: $large) {
   .wrapper {
-    // width: 80%;
+    width: 1200px;
   }
 }
