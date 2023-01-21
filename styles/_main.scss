@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+}
+
+@media (min-width: $medium) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}

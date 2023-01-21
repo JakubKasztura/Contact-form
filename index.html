@@ -34,57 +34,61 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="info">
-        <h1 class="info__title">Contact information</h1>
-        <div class="info__group info__company">
-          <div class="company-icon">
-            <span class="lnr lnr-rocket"></span>
+      <header class="header">
+        <h1 class="header__title">Contact information</h1>
+      </header>
+      <main class="container">
+        <section class="info">
+          <div class="info__group info__company">
+            <div class="company-icon">
+              <span class="lnr lnr-rocket"></span>
+            </div>
+            <p class="company-name">World of toys</p>
           </div>
-          <p class="company-name">World of toys</p>
-        </div>
-        <div class="info__group info__phone">
-          <div class="phone-icon">
-            <span class="lnr lnr-phone-handset"></span>
+          <div class="info__group info__phone">
+            <div class="phone-icon">
+              <span class="lnr lnr-phone-handset"></span>
+            </div>
+            <p class="phone-number">327-483-999</p>
           </div>
-          <p class="phone-number">327-483-999</p>
-        </div>
-        <div class="info__group info__google-maps">
-          <div class="maps-icon">
-            <span class="lnr lnr-map-marker"></span>
+          <div class="info__group info__google-maps">
+            <div class="maps-icon">
+              <span class="lnr lnr-map-marker"></span>
+            </div>
+            <div class="company-location">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11574.47602698532!2d18.640443127592196!3d49.74992315895933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471403944e7df921%3A0x8d581e0027fe96b4!2s%C5%9Awiat%20Zabawek!5e0!3m2!1spl!2spl!4v1674302014923!5m2!1spl!2spl"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <div class="company-location">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11574.47602698532!2d18.640443127592196!3d49.74992315895933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471403944e7df921%3A0x8d581e0027fe96b4!2s%C5%9Awiat%20Zabawek!5e0!3m2!1spl!2spl!4v1674302014923!5m2!1spl!2spl"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-      <section class="form">
-        <form action="" class="form__body">
-          <input type="text" class="form__name" placeholder="Name" required />
-          <input
-            type="email"
-            class="form__email"
-            placeholder="Email Address"
-            required
-          />
-          <textarea
-            class="form_message"
-            cols="10"
-            rows="5"
-            placeholder="Message"
-            required
-          ></textarea>
-          <button type="submit" class="form__submit">Send message</button>
-          <p class="form__terms-services">
-            By clicking the button you are agreeing to our
-            <a href="#" class="terms-services-link">Terms and Services</a>
-          </p>
-        </form>
-      </section>
+        </section>
+        <section class="form">
+          <form action="" class="form__body">
+            <input type="text" class="form__name" placeholder="Name" required />
+            <input
+              type="email"
+              class="form__email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              class="form_message"
+              cols="10"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="form__submit">Send message</button>
+            <p class="form__terms-services">
+              By clicking the button you are agreeing to our
+              <a href="#" class="terms-services-link">Terms and Services</a>
+            </p>
+          </form>
+        </section>
+      </main>
     </div>
   </body>
 </html>

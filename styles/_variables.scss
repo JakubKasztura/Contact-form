@@ -1,29 +1,11 @@
 // Colors
 
-// Primary
-// The designs were created to the following widths:
-
-// - Mobile: 375px
-// - Desktop: 1440px
-
-// ## Colors
-
-// ### Primary
-
 $redColor: hsl(0, 100%, 74%);
 $greenColor: hsl(154, 59%, 51%);
 $greenBoxShadow: hsla(154, 59%, 51%, 0.4);
 $grayBoxShadow: hsla(0, 0%, 39%, 0.4);
 $grayBorder: hsla(0, 0%, 39%, 0.15);
 $grayFocusInputs: hsla(0, 0%, 39%, 0.6);
-// ### Accent
-
-// - Blue: hsl(248, 32%, 49%)
-
-// ### Neutral
-
-// - Dark Blue: hsl(249, 10%, 26%)
-// - Grayish Blue: hsl(246, 25%, 77%)
 
 //Font size
 
@@ -33,3 +15,11 @@ $fontSize: 16px;
 $fontFamily: "Poppins", sans-serif;
 
 //Font Poppins Weights: 400, 500, 600, 700
+
+// Media, breakpoints
+$xXSmall: 375px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xLarge: 1200px;
+$xXLarge: 1400px;

@@ -1,10 +1,9 @@
 .wrapper {
-  @include flexBox(column, center, auto);
+  @include flexBox(column, center, flex-start);
   min-height: 100vh;
-  background-color: $redColor;
-  background-image: url(../images/bg-intro-mobile.png);
-  background-position: center center;
-  // background-repeat: no-repeat;
-  background-size: contain;
-  padding: 20px;
+}
+@media (min-width: $small) {
+  .wrapper {
+    // width: 80%;
+  }
 }

@@ -1,6 +1,8 @@
 // import styles for each section
 @import "variables";
 @import "mixins";
+@import "header";
+@import "main";
 @import "wrapper";
 @import "info";
 @import "form";
@@ -9,4 +11,13 @@
   padding: 0;
   margin: 0;
   font-family: $fontFamily;
+}
+body {
+  margin: 0 auto;
+  background-color: $redColor;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-position: center center;
+  // background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px;
 }

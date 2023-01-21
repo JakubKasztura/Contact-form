@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+  &__title {
+    text-align: center;
+    font-size: 1.6em;
+    color: hsl(0, 100%, 100%);
+  }
+}
+@media (min-width: $medium) {
+  .header {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: $large) {
+  .header {
+    &__title {
+      font-size: 2em;
+    }
+  }
+}

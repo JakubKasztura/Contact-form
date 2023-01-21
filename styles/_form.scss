@@ -1,11 +1,12 @@
 .form {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 7px $grayBoxShadow;
   &__body {
     @include flexBox(column, center, stretch);
+    margin: 0 auto;
     row-gap: 12px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px $grayBoxShadow;
   }
   input,
   textarea,
@@ -42,5 +43,12 @@
     color: $redColor;
     text-decoration: none;
     font-weight: 700;
+  }
+}
+@media (min-width: $small) {
+  .form {
+    &__body {
+      width: 70%;
+    }
   }
 }
