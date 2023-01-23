@@ -69,12 +69,18 @@
         <section class="form">
           <form action="" class="form__body">
             <input type="text" class="form__name" placeholder="Name" required />
+            <label class="form__name-label label--disabled" for="form__name"
+              >Name cannot be empty</label
+            >
             <input
               type="email"
               class="form__email"
               placeholder="Email Address"
               required
             />
+            <label class="form__email-label label--disabled" for="form__email"
+              >Looks like this is not an email</label
+            >
             <textarea
               class="form__message"
               cols="10"
@@ -82,6 +88,11 @@
               placeholder="Message"
               required
             ></textarea>
+            <label
+              class="form__message-label label--disabled"
+              for="form__message"
+              >Message cannot be empty</label
+            >
             <button type="submit" class="form__submit">Send message</button>
             <p class="form__terms-services">
               By clicking the button you are agreeing to our

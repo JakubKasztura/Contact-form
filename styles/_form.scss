@@ -23,6 +23,16 @@
   textarea:focus {
     outline: 1px solid $grayFocusInputs;
   }
+  label {
+    font-size: 0.8em;
+    color: $redColor;
+    font-style: italic;
+    text-align: right;
+  }
+  .label--disabled {
+    display: none;
+  }
+
   &__submit {
     color: hsl(0, 0%, 100%);
     background-color: $greenColor;
