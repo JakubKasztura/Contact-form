@@ -17,11 +17,27 @@
   }
   input,
   textarea {
+    width: 100%;
     font-weight: 600;
   }
   input:focus,
   textarea:focus {
     outline: 1px solid $grayFocusInputs;
+  }
+  &__input-container {
+    position: relative;
+  }
+
+  &__error-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+  }
+  .error-icon--disabled {
+    display: none;
   }
   label {
     font-size: 0.8em;

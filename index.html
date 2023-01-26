@@ -68,26 +68,46 @@
         </section>
         <section class="form">
           <form action="" class="form__body">
-            <input type="text" class="form__name" placeholder="Name" required />
+            <div class="form__input-container">
+              <input type="text" class="form__name" placeholder="Name" />
+              <img
+                src="/images/icon-error.svg"
+                alt="simple red error icon"
+                class="form__error-icon error-icon--disabled"
+              />
+            </div>
+
             <label class="form__name-label label--disabled" for="form__name"
               >Name cannot be empty</label
             >
-            <input
-              type="email"
-              class="form__email"
-              placeholder="Email Address"
-              required
-            />
+            <div class="form__input-container">
+              <input
+                type="email"
+                class="form__email"
+                placeholder="Email Address"
+              />
+              <img
+                src="/images/icon-error.svg"
+                alt="simple red error icon"
+                class="form__error-icon error-icon--disabled"
+              />
+            </div>
             <label class="form__email-label label--disabled" for="form__email"
               >Looks like this is not an email</label
             >
-            <textarea
-              class="form__message"
-              cols="10"
-              rows="5"
-              placeholder="Message"
-              required
-            ></textarea>
+            <div class="form__input-container">
+              <textarea
+                class="form__message"
+                cols="10"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <img
+                src="/images/icon-error.svg"
+                alt="simple red error icon"
+                class="form__error-icon error-icon--disabled"
+              />
+            </div>
             <label
               class="form__message-label label--disabled"
               for="form__message"
