@@ -24,6 +24,9 @@
   textarea:focus {
     outline: 1px solid $grayFocusInputs;
   }
+  .error::placeholder {
+    color: $redColor;
+  }
   &__input-container {
     position: relative;
   }
@@ -73,13 +76,22 @@
 }
 @media (min-width: $small) {
   .form {
-    &__body {
-      width: 80%;
-    }
+    width: 75%;
+    margin: 20px auto 0;
+    // &__body {
+    //   width: 80%;
+    // }
+  }
+}
+@media (min-width: $medium) {
+  .form {
+    width: 40%;
+    margin: 0;
   }
 }
 @media (min-width: $large) {
   .form {
+    width: 30%;
     height: 100%;
     &__body {
       height: 100%;

@@ -35,9 +35,9 @@ function validateInputs(dataObject) {
     console.log(dataObject[key]);
 
     if (dataObject[key].value === "") {
-      console.log(keyLabel);
       keyLabel.classList.remove("label--disabled");
       errorIcon.classList.remove("error-icon--disabled");
+      dataObject[key].setAttribute("placeholder", "");
       dataObject[key].style.borderColor = redColor;
     } else if (!(dataObject[key].value === "")) {
       keyLabel.classList.add("label--disabled");
@@ -46,6 +46,8 @@ function validateInputs(dataObject) {
     }
     if (key === "userEmail") {
       console.log("email");
+      dataObject[key].setAttribute("placeholder", "email@example/com");
+      dataObject[key].classList.add("error");
       const atIndex = dataObject[key].value.indexOf("@");
       const msgAfterAt = dataObject[key].value.slice(atIndex + 1);
       const dotIndex = dataObject[key].value.indexOf(".");
