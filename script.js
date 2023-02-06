@@ -1,17 +1,14 @@
 const FORM = document.querySelector(".form__body"),
-  SUBMIT_BUTTON = document.querySelector(".form__submit");
-const labels = document.querySelectorAll("label"),
-  error_icon = document.querySelector(".form__error-icon"),
-  redColor = "hsl(0, 100%, 74%)",
-  grayBorder = "hsla(0, 0%, 39%, 0.15)";
-// change to CAPTIONS NAME etc
+  SUBMIT_BUTTON = document.querySelector(".form__submit"),
+  RED_COLOR = "hsl(0, 100%, 74%)",
+  GRAY_BORDER = "hsla(0, 0%, 39%, 0.15)";
 
 function sendMessage(e) {
   e.preventDefault();
-
   const createdDataObject = createDOMDataObj();
-  console.log("clicked");
-  console.log(createdDataObject);
+  if (createdDataObject.validationResult === true) {
+    sendEmail();
+  }
 }
 function createDOMDataObj() {
   const name = document.querySelector(".form__name"),
@@ -27,22 +24,27 @@ function createDOMDataObj() {
   return dataObject;
 }
 function validateInputs(dataObject) {
+  let validInputCounter = 0;
+  let validEmail = false;
+
   for (const key in dataObject) {
     const keyLabel = dataObject[key].closest(
       ".form__input-container"
     ).nextElementSibling;
     const errorIcon = dataObject[key].nextElementSibling;
-    console.log(dataObject[key]);
 
-    if (dataObject[key].value === "") {
+    if (dataObject[key].value === "" && key != "userEmail") {
       keyLabel.classList.remove("label--disabled");
       errorIcon.classList.remove("error-icon--disabled");
       dataObject[key].setAttribute("placeholder", "");
-      dataObject[key].style.borderColor = redColor;
+      dataObject[key].style.borderColor = RED_COLOR;
     } else if (!(dataObject[key].value === "")) {
       keyLabel.classList.add("label--disabled");
       errorIcon.classList.add("error-icon--disabled");
-      dataObject[key].style.borderColor = grayBorder;
+      dataObject[key].style.borderColor = GRAY_BORDER;
+      validInputCounter++;
+      console.log(validInputCounter);
+    } else {
     }
     if (key === "userEmail") {
       console.log("email");
@@ -63,10 +65,18 @@ function validateInputs(dataObject) {
       ) {
         keyLabel.classList.remove("label--disabled");
         errorIcon.classList.remove("error-icon--disabled");
-        dataObject[key].style.borderColor = redColor;
+        dataObject[key].style.borderColor = RED_COLOR;
+      } else {
+        validEmail = true;
       }
     }
-    // create another object for only values loop it
   }
+  if (validInputCounter >= 3 && validEmail === true) {
+    dataObject.validationResult = true;
+  }
+}
+function sendEmail() {
+  console.log("send emailing");
+  FORM.submit();
 }
 SUBMIT_BUTTON.addEventListener("click", sendMessage);

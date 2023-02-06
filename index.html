@@ -18,7 +18,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/favicon-32x32.png"
+      href="images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,11 +67,20 @@
           </div>
         </section>
         <section class="form">
-          <form action="" class="form__body">
+          <form
+            action="http://externalapp.local/"
+            method="post"
+            class="form__body"
+          >
             <div class="form__input-container">
-              <input type="text" class="form__name" placeholder="Name" />
+              <input
+                type="text"
+                class="form__name"
+                placeholder="Name"
+                name="name"
+              />
               <img
-                src="/images/icon-error.svg"
+                src="images/icon-error.svg"
                 alt="simple red error icon"
                 class="form__error-icon error-icon--disabled"
               />
@@ -85,9 +94,10 @@
                 type="email"
                 class="form__email"
                 placeholder="Email Address"
+                name="email"
               />
               <img
-                src="/images/icon-error.svg"
+                src="images/icon-error.svg"
                 alt="simple red error icon"
                 class="form__error-icon error-icon--disabled"
               />
@@ -101,9 +111,10 @@
                 cols="10"
                 rows="5"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <img
-                src="/images/icon-error.svg"
+                src="images/icon-error.svg"
                 alt="simple red error icon"
                 class="form__error-icon error-icon--disabled"
               />
